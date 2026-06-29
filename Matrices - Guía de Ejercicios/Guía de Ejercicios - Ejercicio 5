@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static int FilaMaximo(int[,] matriz)
+    {
+        int filaMax = 0;
+        int max = matriz[0, 0];
+        for (int i = 0; i < matriz.GetLength(0); i++)
+        {
+            for (int j = 0; j < matriz.GetLength(1); j++)
+            {
+                if (matriz[i, j] > max)
+                {
+                    max = matriz[i, j];
+                    filaMax = i;
+                }
+            }
+        }
+        return filaMax;
+    }
+}
