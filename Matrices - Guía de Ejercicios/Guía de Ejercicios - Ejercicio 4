@@ -1,0 +1,16 @@
+using System;
+class Program
+{
+    static int FilaMayor(int[,] matriz, int columna)
+    {
+        int filaMayor = 0;
+        for (int i = 1; i < matriz.GetLength(0); i++)
+        {
+            if (matriz[i, columna] > matriz[filaMayor, columna])
+            {
+                filaMayor = 1;
+            }
+        }
+        return filaMayor;
+    }
+}
