@@ -1,0 +1,33 @@
+﻿using System;
+class Program
+{
+    static void RotarIzquierda(int[,] matriz)
+    {
+        int filas = matriz.GetLength(0);
+        int columnas = matriz.GetLength(1);
+        int primero = matriz[0, 0];
+        for (int i = 0; i < filas; i++)
+        {
+            for (int j = 0; j < columnas; j++)
+            {
+                if (i == filas - 1 && j == columnas - 1)
+                    matriz[i, j] = primero;
+                else if (j == columnas - 1)
+                    matriz[i, j] = matriz[i + 1, 0];
+                else
+                    matriz[i, j] = matriz[i, j + 1];
+            }
+        }
+    }
+    static void MostrarMatriz(int[,] matriz)
+    {
+        for (int i = 0; i < matriz.GetLength(0); i++)
+        {
+            for (int j = 0; j < matriz.GetLength(1); j++)
+            {
+                Console.Write(matriz[i, j] + "\t");
+            }
+            Console.WriteLine();
+        }
+    }
+}

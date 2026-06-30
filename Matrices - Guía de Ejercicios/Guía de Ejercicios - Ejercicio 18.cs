@@ -1,0 +1,31 @@
+﻿using System;
+
+class Program
+{
+    static double[,] TransponerMatriz(double[,] matriz)
+    {
+        int filas = matriz.GetLength(0);
+        int columnas = matriz.GetLength(1);
+        double[,] transpuesta = new double[columnas, filas];
+        for (int i = 0; i < filas; i++)
+        {
+            for (int j = 0; j < columnas; j++)
+            {
+                transpuesta[j, i] = matriz[i, j];
+            }
+        }
+
+        return transpuesta;
+    }
+    static void MostrarMatriz(double[,] matriz)
+    {
+        for (int i = 0; i < matriz.GetLength(0); i++)
+        {
+            for (int j = 0; j < matriz.GetLength(1); j++)
+            {
+                Console.Write(matriz[i, j] + "\t");
+            }
+            Console.WriteLine();
+        }
+    }
+}
