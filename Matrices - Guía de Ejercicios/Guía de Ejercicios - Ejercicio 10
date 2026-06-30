@@ -1,0 +1,13 @@
+using System;
+class Program
+{
+    static int SumarColumna(int[,] matriz, int columna)
+    {
+        int suma = 0;
+        for (int i = 0; i < matriz.GetLength(0); i++)
+        {
+            suma += matriz[i, columna];
+        }
+        return suma;
+    }
+}
