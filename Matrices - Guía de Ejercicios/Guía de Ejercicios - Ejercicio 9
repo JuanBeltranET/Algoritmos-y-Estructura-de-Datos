@@ -1,0 +1,14 @@
+using System;
+class Program
+{
+    static int SumarFila(int[,] matriz, int fila)
+    {
+        int suma = 0;
+
+        for (int j = 0; j < matriz.GetLength(1); j++)
+        {
+            suma += matriz[fila, j];
+        }
+        return suma;
+    }
+}
