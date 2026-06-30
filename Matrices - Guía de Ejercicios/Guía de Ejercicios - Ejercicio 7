@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void PosicionMaximo(int[,] matriz)
+    {
+        int fila = 0;
+        int columna = 0;
+        int max = matriz[0, 0];
+        for (int i = 0; i < matriz.GetLength(0); i++)
+        {
+            for (int j = 0; j < matriz.GetLength(1); j++)
+            {
+                if (matriz[i, j] > max)
+                {
+                    max = matriz[i, j];
+                    fila = i;
+                    columna = j;
+                }
+            }
+        }
+        Console.WriteLine("El mayor elemento es: " + max);
+        Console.WriteLine("Se encuentra en la posición [" + fila + "," + columna + "]");
+    }
+}
