@@ -1,0 +1,66 @@
+TP Matrices teórico
+1-Definiciones. 
+¿Qué es una matriz en el contexto de la programación y las matemáticas?
+1.1-¿Cómo se representa una matriz de dos dimensiones en un lenguaje de programación (por ejemplo, Python, Java, C++)? Explica las estructuras de datos comunes utilizadas.
+1.2-¿Qué son las dimensiones de una matriz? Si tienes una matriz A con m filas y n columnas, ¿cómo se denota su tamaño? 
+1.3-Principales diferencias entre matrices y vectores (cuadro,) 
+
+
+2- Elementos y posiciones de una matriz. 
+¿Cómo se accede a un elemento específico dentro de una matriz? Si una matriz se llama M, ¿cómo se representa la posición de un elemento en la fila i y columna j? 2.1-¿Es importante el orden de los índices (fila, columna) al acceder a un elemento? Explica por qué.
+
+
+3- Tipos de matrices. Define qué es una matriz cuadrada. 
+3.1-¿Qué es una matriz fila y una matriz columna? 
+3.2-¿Qué es una matriz nula? 
+
+
+4- Operaciones básicas: Suma 
+¿Cuál es la condición fundamental para poder sumar o restar dos matrices? 4.1-Si tienes dos matrices A y B del mismo tamaño, ¿cómo se realiza la operación de suma A + B? Describe el proceso a nivel de elementos. 
+
+
+5- Operaciones básicas: Multiplicación 
+¿Cuál es la condición fundamental para poder multiplicar dos matrices A y B (es decir, calcular A * B)? 
+5.1-Si la matriz A es de tamaño m×n y la matriz B es de tamaño p×q, ¿cuáles deben ser los valores de n y p para que la multiplicación sea posible? ¿Cuál será el tamaño de la matriz resultante C? 
+5.2-Explica conceptualmente cómo se calcula un elemento C[i][j] de la matriz producto. 
+
+
+6- Otros
+¿Es posible realizar el videojuego ‘Tetris’ utilizando matrices? Justifique su respuesta. -6.1-Qué tipos de datos puede almacenar una matriz?
+[Respuestas]
+1. Una matriz es un conjunto de datos organizados en filas y columnas. En matemáticas se usa para representar números ordenados y en programación sirve para almacenar muchos datos relacionados en una sola variable.
+1.1. Una matriz de dos dimensiones se representa como un arreglo bidimensional. En C#, por ejemplo, se declara así:
+1.2. Una matriz de dos dimensiones se representa como un arreglo bidimensional. En C#, por ejemplo, se declara así: “int[,] matriz = new int[3,4];”. Esto crea una matriz con 3 filas y 4 columnas, donde cada posición puede almacenar un número entero.
+1.3 
+Matriz
+	Vector
+	Tiene filas y columnas. Además sus elementos son vectores
+	Tiene una sola fila o una sola columna.
+	Es bidimensional.
+	Es unidimensional.
+	Organiza mayor cantidad de datos.
+	Organiza datos en una sola dirección.
+	2. Se accede indicando la fila y la columna donde se encuentra el elemento. En programación se utilizan índices para señalar la posición.
+2.1. Sí, es muy importante. Primero se escribe la fila y luego la columna. Si se cambia el orden, se accederá a un elemento diferente o incluso puede producir un error.
+3. Es una matriz que tiene la misma cantidad de filas y columnas. Por ejemplo, una matriz de 4 × 4 o de 5 × 5.
+3.1. Matriz fila: tiene una sola fila y varias columnas.
+Matriz columna: tiene una sola columna y varias filas.
+3.2. Es una matriz en la que todos sus elementos son iguales a 0. Se utiliza mucho en operaciones matemáticas y programación.
+4. Las dos matrices deben tener exactamente la misma cantidad de filas y columnas. Si tienen tamaños diferentes, no se pueden sumar.
+4.1. La suma se hace agregando los elementos que ocupan la misma posición en ambas matrices. El resultado es una nueva matriz del mismo tamaño.
+Por ejemplo:
+A ={1 2}   B = {3 4}
+      {5 6}         {7 8}
+A+B = {4   ,   6}
+            {12, 14}
+5. La cantidad de columnas de la primera matriz debe ser igual a la cantidad de filas de la segunda matriz.
+5.1. Para poder multiplicarlas debe cumplirse que n = p. La matriz resultante tendrá un tamaño de m × q.
+5.2. Cada elemento de la matriz resultado se obtiene multiplicando los elementos de la fila correspondiente de la primera matriz por los de la columna correspondiente de la segunda matriz y luego sumando esos productos.
+6. Sí. El tablero del juego puede representarse con una matriz, donde cada casilla corresponde a una posición. Cada elemento de la matriz indica si el espacio está vacío o ocupado por una pieza.
+6.1. Una matriz puede almacenar distintos tipos de datos, siempre que todos sean del mismo tipo. Por ejemplo:
+* int (números enteros)
+* double o float (números decimales)
+* char (caracteres)
+* string (texto)
+* bool (verdadero o falso)
+Estas respuestas tienen un nivel de explicación básico, ideal para un trabajo práctico de secundaria o primer año de programación.
