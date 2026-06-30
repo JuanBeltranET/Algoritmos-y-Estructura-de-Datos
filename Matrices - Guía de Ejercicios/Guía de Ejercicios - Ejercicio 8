@@ -1,0 +1,23 @@
+using System;
+class Program
+{
+    static void BuscarNumero(int[,] matriz, int numero)
+    {
+        bool encontrado = false;
+        for (int i = 0; i < matriz.GetLength(0); i++)
+        {
+            for (int j = 0; j < matriz.GetLength(1); j++)
+            {
+                if (matriz[i, j] == numero)
+                {
+                    Console.WriteLine("Número encontrado en la posición [" + i + "," + j + "]");
+                    encontrado = true;
+                }
+            }
+        }
+        if (!encontrado)
+        {
+            Console.WriteLine("El número no se encuentra en la matriz.");
+        }
+    }
+}
